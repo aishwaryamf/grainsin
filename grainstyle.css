@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:#160909;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)) ,url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: rgb(236, 203, 159);
+    cursor: pointer;
+}
+.menu ul li:hover{
+color: yellowgreen;
+}
+.logo img{
+    width: 70px;
+    margin-top: -7px;
+    margin-right: 40px;
+
+}
+.active{
+    color: #FFC300 !important;
+}
+.buy-btn{
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: cornsilk;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#1C1818,#1C1818), radial-gradient(circle at top left, #FFC300,#27A808,#FFC300);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+}
+.buy-btn span{
+    display: block;
+    padding: 8px 22px;
+}
+
+.buy-btn:hover
+{
+    animation: pulse 1s infinite;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    70%
+    {
+        transform: scale(0.9);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: wheat;
+
+}
+.app-text{
+    width: 50%;
+    float: left;
+
+}
+.app-text h1{
+    font-size: 62px;
+    width: 840px;
+    position: relative;
+    margin-left: 40px;
+
+    
+}
+.app-text p{
+    font-size: 25px;
+    width: 650px;
+    margin: 30px 0 30px 40px;
+    line-height: 35px;
+    color: #FFC300;
+}
+.app-text{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.8s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.app-picture{
+    width: 50%;
+    float: right;
+
+}
+.app-picture img{
+    width: 100%;
+    margin-top: -20px;
+    padding-left: 50px;
+}
+.info-btn{
+    margin-left: 40px ;
+    display: inline-flex;
+}
+.info-btn-inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-image: linear-gradient(#1C1818,#1C1818), radial-gradient(circle at top left, #FFC300,#27A808,#FFC300);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    text-align: center;
+    position: relative;
+    transition: 0.8s;
+}
+.info-btn-inner .fa{
+    padding: 18px 0;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+small{
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-style: oblique;
+    color: rgb(105, 145, 26);
+    letter-spacing: 3px;
+}
+.info-btn:hover
+{
+    animation: pulse 1s infinite;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    70%
+    {
+        transform: scale(0.9);
+    }
+    
+}
+.quick-links{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right,#ffc40086,rgba(24, 117, 1, 0.514),#ffc4007e);
+}
+.quick-links ul{
+    display: inline-flex;
+    margin: 20px auto;
+    text-align: center;
+}
+.quick-links ul li{
+    list-style: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+.quick-links ul li .fa{
+    font-size: 25px;
+    color: wheat;
+}
+.quick-links ul li p{
+    margin-top: 5px;
+    margin-bottom: -10px;
+    font-size: 12px;
+    color: wheat;
+}
+.quick-links ul li p:hover
+{
+    animation: pulse 1s;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    70%
+    {
+        transform: scale(0.9);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.quick-links ul li .fa:hover
+{
+    animation: pulse 1s;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    70%
+    {
+        transform: scale(0.9);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+.social-icons ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+
+}
+.social-icons ul li a{
+    color: wheat;
+    border-radius: 50%;
+    border: 1px solid wheat;
+    padding: 5px;
+    display: block;
+}
+.social-icons ul li a:hover
+{
+    animation: pulse 1s;
+}
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    70%
+    {
+        transform: scale(0.9);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
